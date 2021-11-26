@@ -13,18 +13,17 @@
         }
 
         public function login(){ 
-             $this->load->view('header');
              Session::init();
              if(Session::get('login')==true){
-                header("Location:".BASE_URL."login/dashboard");
+                header("Location:".BASE_URL."app/views/admin/index.php");
              }
-             $this->load->view('admin/login');
-             $this->load->view('footer');
+            header("Location:".BASE_URL."app/views/loginfile/sign-in.php");
+           
         }
 
         public function dashboard(){
             Session::checkSession();
-            $this->load->view('admin/dashboard');
+            header("Location:".BASE_URL."app/views/admin/index.php");
         }
 
         public function authentication_login(){
@@ -46,14 +45,14 @@
                 Session::set('login',true);
                 Session::set('usernsme', $result[0]['username']);
                 Session::set('userid', $result[0]['ad_admin']);
-                header("Location:".BASE_URL."login/dashboard");
+                header("Location:".BASE_URL."app/views/admin/index.php");
             }
         }
 
         public function logout(){
             Session::init();
             Session::destroy();
-            header("Location:".BASE_URL."login");
+            header("Location:".BASE_URL."app/views/loginfile/sign-in.php");
         }
 
 
