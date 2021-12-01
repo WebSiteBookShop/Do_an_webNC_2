@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,9 +6,9 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>Quản lý danh mục sách</title>
     <!-- Favicon-->
-    <?php
-     include('app/views/admin/Giaodien/linkcss.php');
-    ?>
+   <?php
+   include('app/views/admin/Giaodien/linkcss.php');
+   ?>
 
 </head>
 
@@ -16,24 +16,15 @@
    
     <!-- Page Loader -->
     <?php
-
-    if(!empty($_GET['mgs'])){ 
         include('app/views/admin/Giaodien/header.php');
-        include('app/views/admin/pages/widgets/menu/menu_danhmucsah.php');
-    }
-    else  {
-        include('app/views/admin/Giaodien/header.php');
-        include('app/views/admin/pages/widgets/menu/menu_danhmucsah.php');
-    }
+        include('app/views/admin/pages/widgets/menu/menu_danhmucsah_filesau.php');
     ?>
     <!-- #Top Bar -->
    
 
     <section class="content">
         <div class="container-fluid">
-            <!-- Basic Examples --> 
-            <!-- #END# Basic Examples -->
-            <!-- Exportable Table -->
+           
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
@@ -51,17 +42,28 @@
                             </h2>
                         </div>
                         <div class="body">
-                        <form action="../category/insert_category" method="POST">
+
+                        <?php
+                            foreach($categorybyid as $key => $cate){
+                        ?>
+                        <form action="../../category/update_category/<?php echo $cate['id_category_product'] ?>" method="POST">
+                        <div class="form-group">
+                                <label for="email">ID danh mục</label>
+                                <input type="text" name = "title" class="form-control" value="<?php echo $cate['id_category_product']?>" >
+                            </div>
                             <div class="form-group">
                                 <label for="email">Tên danh mục</label>
-                                <input type="text" name = "title" class="form-control" >
+                                <input type="text" name = "title" class="form-control"  value="<?php echo $cate['name_category_product'] ?>">
                             </div>
                             <div class="form-group">
                                 <label for="pwd">Giới thiệu</label>
-                                <input type="text" name = "desc" class="form-control" >
+                                <textarea type="text" name = "desc" rows="5" class="form-control" style="resize: none;"> <?php echo $cate['desc_category_product'] ?></textarea> 
                             </div>
-                            <button type="submit" name="submit" class="btn_them">Thêm danh mục</button>
+                            <button type="submit" name="submit" class="btn_them">Cập nhập danh mục</button>
                             </form>
+                            <?php
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>

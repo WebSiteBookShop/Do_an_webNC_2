@@ -5,31 +5,29 @@
         {
             parent::__construct();
         }
+        
 
-        public function category($table_category_product){
-            $sql = "SELECT * FROM $table_category_product ";
+        public function category($table){
+            $sql = "SELECT * FROM $table ORDER BY id_category_product DESC";
             return $this->db->select($sql);
 
         }
 
-        public function categorybyid($table_category_product, $id){
-            $sql = "SELECT * FROM $table_category_product Where id_category_product=:id ";
-
-            $data =array(':id'=>$id)  ;
-
-           return $this->db->select($sql, $data );
+        public function categorybyid($table, $cond){
+            $sql = "SELECT * FROM $table Where $cond";
+           return $this->db->select($sql,);
         }       
 
-        public function inset_category($table_category_product,$data){
-            return $this->db->insert($table_category_product, $data );
+        public function insert_category($table,$data){
+            return $this->db->insert($table, $data );
             
         }
-        public function updatecategory($table_category_product,$data,$cond){
-            return $this->db->update($table_category_product, $data ,$cond);
+        public function update_category($table,$data,$cond){
+            return $this->db->update($table, $data ,$cond);
         }
 
-        public function deletecategory($table_category_product,$cond){
-            return $this->db->delete($table_category_product,$cond);
+        public function delete_category($table,$cond){
+            return $this->db->delete($table,$cond);
         }
     }
 ?>

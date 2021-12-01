@@ -56,7 +56,7 @@
                     $this->controller->{$this->methodName}($this->url[2]);
                 }
                 else{
-                    header("Location:".BASE_URL."index/notfound");
+                    // header("Location:".BASE_URL."index/notfound");
                 }
             }
             else{
@@ -65,7 +65,7 @@
                         $this->controller->{$this->url[1]}();
                     }
                     else{
-                         header("Location:".BASE_URL."index/notfound");
+                        //  header("Location:".BASE_URL."index/notfound");
                     }
                 }
                 else{
@@ -73,7 +73,7 @@
                         $this->controller->{$this->methodName}();
                     }
                     else{
-                        header("Location:".BASE_URL."index/notfound");
+                        // header("Location:".BASE_URL."index/notfound");
                     }
                 }
             }

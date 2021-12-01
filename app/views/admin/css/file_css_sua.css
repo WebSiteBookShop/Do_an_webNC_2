@@ -20,8 +20,8 @@
     border: 1px;
     border-style: solid;
     border-color: rgb(80, 80, 80);
-    width: 50%;
-    height: 30px;
+    padding-left: 10px;
+    width: 70%;
 }
 
 .btn_them {
@@ -30,4 +30,23 @@
     width: 15%;
     height: 25px;
     text-align: center;
+}
+
+td .ql_dmsp_update {
+    background-color: #607D8B;
+    color: rgb(255, 255, 255);
+    width: 15%;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+td .ql_dmsp_delete {
+    background-color: #607D8B;
+    color: rgb(255, 255, 255);
+    width: 20%;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
 }

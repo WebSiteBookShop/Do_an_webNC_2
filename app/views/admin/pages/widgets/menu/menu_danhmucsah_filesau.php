@@ -4,7 +4,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="images/user.png" width="48" height="48" alt="User" />
+                    <img src="../app/views/admin/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
@@ -28,49 +28,50 @@
             <div class="menu">
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
-                    <li class="active">
-                        <a href="index.php">
+                    <li>
+                        <a href="../app/views/admin/index.php">
                             <i class="material-icons">home</i>
                             <span>Trang chủ</span>
                         </a>
                     </li>
                     
-                    <li>
+                    <li class="active">
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">widgets</i>
-                            <span>Quản Lý Sản Phẩm</span>
+                            <span>Quản lý sản phẩm</span>
                         </a>
                         <ul class="ml-menu">
-                                    <li>
-                                    <a href="../../../category/list_category">Danh mục sách</a>
-                                        <!-- <a href="pages/widgets/cards/admin_ql_dmsp.php">Danh mục sách</a> -->
-                                    </li>
-                                    <li>
-                                        <a href="pages/widgets/cards/admin_ql_tlsp.php">Thể loại sách</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages/widgets/cards/admin_ql_sp.php">Sách</a>
-                                    </li>
+                            <li class="active">
+                                <a href="../../category/list_category">Danh mục sách</a>
+                                        <!-- <a href="../../../pages/widgets/admin_ql_dmsp.php">Danh mục sách</a> -->
+                            </li>
+                            <li>
+                                <a href="../app/views/admin/pages/widgets/cards/admin_ql_tlsp.php">Thể loại sách</a>
+                            </li>
+                            <li>
+                                <a href="pages/widgets/cards/admin_ql_sp.php">Sách</a>
+                            </li>
+                              
                         </ul>
                     </li>
-                   
+                    
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">assignment</i>
-                            <span>Hóa đơn</span>
+                            <span>Quản lý hóa đơn</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="pages/forms/admin_ql_hd.php">Hóa đơn</a>
+                                <a href="../../../pages/forms/admin_ql_hd.php">Hóa đơn</a>
                             </li>
                             <li>
-                                <a href="pages/forms/admin_ql_cthd.php">Chi tiết hóa đơn</a>
+                                <a href="../../../pages/forms/admin_ql_cthd.php">Chi tiết hóa đơn</a>
                             </li>
                             <li>
-                                <a href="pages/forms/admin_ql_dh.php">Đơn hàng</a>
+                                <a href="../../../pages/forms/admin_ql_dh.php">Đơn hàng</a>
                             </li>
                             <li>
-                                <a href="pages/forms/admin_ql_ctdh.php">Chi tiết đơn hàng</a>
+                                <a href="../../../pages/forms/admin_ql_ctdh.php">Chi tiết đơn hàng</a>
                             </li>
                             
                         </ul>
@@ -78,33 +79,33 @@
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">view_list</i>
-                            <span>Quản lý tài khoảng</span>
+                            <span>Quản lý tài khoảng>
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="pages/tables/admin_ql_admin.php">Admin</a>
+                                <a href="../../../pages/tables/admin_ql_admin.php">Admin</a>
                             </li>
                             <li>
-                                <a href="pages/tables/admin_ql_nv.php">Nhân viên</a>
+                                <a href="../../../pages/tables/admin_ql_nv.php">Nhân viên</a>
                             </li>
                             <li>
-                                <a href="pages/tables/admin_ql_kh.php">Khách hàng</a>
+                                <a href="../../../pages/tables/admin_ql_kh.php">Khách hàng</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="pages/admin_xetduyethd.php">
+                        <a href="../../../pages/admin_ql_xetduyethd.php">
                             <i class="material-icons">text_fields</i>
                             <span>Xét duyệt hóa đơn</span>
                         </a>
                     </li>
                     <li>
-                        <a href="pages/admin_ql_banner.php">
+                        <a href="../../../pages/admin_ql_banner.php">
                             <i class="material-icons">layers</i>
                             <span>Quản lý banner</span>
                         </a>
                     </li>
-                   
+                    
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">pie_chart</i>
@@ -112,23 +113,22 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="pages/charts/morris.html">Morris</a>
+                                <a href="../../../pages/charts/morris.html">Morris</a>
                             </li>
                             <li>
-                                <a href="pages/charts/flot.html">Flot</a>
+                                <a href="../../../pages/charts/flot.html">Flot</a>
                             </li>
                             <li>
-                                <a href="pages/charts/chartjs.html">ChartJS</a>
+                                <a href="../../../pages/charts/chartjs.html">ChartJS</a>
                             </li>
                             <li>
-                                <a href="pages/charts/sparkline.html">Sparkline</a>
+                                <a href="../../../pages/charts/sparkline.html">Sparkline</a>
                             </li>
                             <li>
-                                <a href="pages/charts/jquery-knob.html">Jquery Knob</a>
+                                <a href="../../../pages/charts/jquery-knob.html">Jquery Knob</a>
                             </li>
                         </ul>
                     </li>
-                    
                 </ul>
             </div>
             <!-- #Menu -->
@@ -235,7 +235,51 @@
                         </li>
                     </ul>
                 </div>
-                
+                <div role="tabpanel" class="tab-pane fade" id="settings">
+                    <div class="demo-settings">
+                        <p>GENERAL SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Report Panel Usage</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Email Redirect</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>SYSTEM SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Notifications</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Auto Updates</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>ACCOUNT SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Offline</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Location Permission</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
                             </li>
                         </ul>
                     </div>

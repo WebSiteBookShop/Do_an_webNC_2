@@ -41,10 +41,10 @@
                             <span>Quản lý sản phẩm</span>
                         </a>
                         <ul class="ml-menu">
-                            <li>
-                                <a href="../../../pages/widgets/cards/admin_ql_dmsp.php">Danh mục sách</a>
+                            <li>  
+                            <a href="../category/list_category">Danh mục sách</a>
                             </li>
-                            <li =>
+                            <li>
                                 <a href="../../../pages/widgets/cards/admin_ql_tlsp.php">Thể loại sách</a>
                             </li>
                             <li class="active">

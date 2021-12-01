@@ -4,7 +4,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="../../../images/user.png" width="48" height="48" alt="User" />
+                    <img src="../app/views/admin/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
@@ -29,7 +29,7 @@
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     <li>
-                        <a href="../../../index.php">
+                        <a href="../app/views/admin/index.php">
                             <i class="material-icons">home</i>
                             <span>Trang chủ</span>
                         </a>
@@ -42,14 +42,15 @@
                         </a>
                         <ul class="ml-menu">
                             <li class="active">
-                                        <a href="../../../pages/widgets/admin_ql_dmsp.php">Danh mục sách</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../../pages/widgets/cards/admin_ql_tlsp.php">Thể loại sách</a>
-                                    </li>
-                                    <li>
-                                        <a href="../../../pages/widgets/cards/admin_ql_sp.php">Sách</a>
-                                    </li>
+                                <a href="../category/list_category">Danh mục sách</a>
+                                        <!-- <a href="../../../pages/widgets/admin_ql_dmsp.php">Danh mục sách</a> -->
+                            </li>
+                            <li>
+                                <a href="../app/views/admin/pages/widgets/cards/admin_ql_tlsp.php">Thể loại sách</a>
+                            </li>
+                            <li>
+                                <a href="pages/widgets/cards/admin_ql_sp.php">Sách</a>
+                            </li>
                               
                         </ul>
                     </li>

@@ -51,8 +51,7 @@
         public function affectedRows($sql,$username, $password){
             $statement = $this->prepare($sql);
             $statement->execute(array($username, $password));
-            return
-             $statement->rowCount();
+            return $statement->rowCount();
         }
 
         public function selectUser($sql,$username, $password){
