@@ -36,7 +36,7 @@
                             <h2>
                                 Quản lý danh mục sách
                             </h2>
-                            <a href="../category/list_addcategory"class="butonthem">Thêm sản phẩm  </a>
+                            <a href="../category_list_product/list_addcategory"class="butonthem">Thêm sản phẩm  </a>
                             
                         </div>
                         <div class="body">
@@ -53,9 +53,9 @@
                                     <thead>
                                         <tr>
                                             <th>STT</th>
-                                            <th>ID category_product</th>
-                                            <th>Name category product</th>
-                                            <th>Desc category Product</th>
+                                            <th>Mã danh mục</th>
+                                            <th>Tên danh mục</th>
+                                            <th>Mô tả</th>
                                             <th>Quản Lý</th>
                                         </tr>
                                     </thead>
@@ -66,12 +66,12 @@
                                         ?>
                                         <tr>
                                             <td><?php echo $i ?>  </td>
-                                            <td><?php echo $cate['id_category_product']; ?></td>
-                                            <td><?php echo $cate['name_category_product']; ?></td>
-                                            <td><?php echo $cate['desc_category_product']; ?></td>
+                                            <td><?php echo $cate['id_category_list_product']; ?></td>
+                                            <td><?php echo $cate['name_category_list_product']; ?></td>
+                                            <td><?php echo $cate['desc_category_list_product']; ?></td>
                                             <td>
-                                            <a href="../category/list_updatecategory/<?php echo $cate['id_category_product'];?>"   style="text-decoration: none">Cập nhập</a>
-                                            <a href="../category/delete_category/<?php echo $cate['id_category_product'];?>"  style="text-decoration: none; float: right;">Xóa</a>
+                                            <a href="../category_list_product/list_updatecategory/<?php echo $cate['id_category_list_product'];?>"   style="text-decoration: none">Cập nhập</a>
+                                            <a href="../category_list_product/delete_category/<?php echo $cate['id_category_list_product'];?>"  style="text-decoration: none; float: right;">Xóa</a>
                                             </td>
                                         </tr>
                                         <?php

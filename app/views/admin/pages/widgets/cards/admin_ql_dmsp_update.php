@@ -46,18 +46,18 @@
                         <?php
                             foreach($categorybyid as $key => $cate){
                         ?>
-                        <form action="../../category/update_category/<?php echo $cate['id_category_product'] ?>" method="POST">
+                        <form action="../../category_list_product/update_category/<?php echo $cate['id_category_list_product'] ?>" method="POST">
                         <div class="form-group">
                                 <label for="email">ID danh mục</label>
-                                <input type="text" name = "title" class="form-control" value="<?php echo $cate['id_category_product']?>" >
+                                <input type="text" name = "title" class="form-control" value="<?php echo $cate['id_category_list_product']?>" >
                             </div>
                             <div class="form-group">
                                 <label for="email">Tên danh mục</label>
-                                <input type="text" name = "title" class="form-control"  value="<?php echo $cate['name_category_product'] ?>">
+                                <input type="text" name = "title" class="form-control"  value="<?php echo $cate['name_category_list_product'] ?>">
                             </div>
                             <div class="form-group">
                                 <label for="pwd">Giới thiệu</label>
-                                <textarea type="text" name = "desc" rows="5" class="form-control" style="resize: none;"> <?php echo $cate['desc_category_product'] ?></textarea> 
+                                <textarea type="text" name = "desc" rows="5" class="form-control" style="resize: none;"> <?php echo $cate['desc_category_list_product'] ?></textarea> 
                             </div>
                             <button type="submit" name="submit" class="btn_them">Cập nhập danh mục</button>
                             </form>

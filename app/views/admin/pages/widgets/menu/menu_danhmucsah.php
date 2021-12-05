@@ -42,7 +42,7 @@
                         </a>
                         <ul class="ml-menu">
                             <li class="active">
-                                <a href="../category/list_category">Danh mục sách</a>
+                                <a href="../category_list_product/list_category">Danh mục sách</a>
                                         <!-- <a href="../../../pages/widgets/admin_ql_dmsp.php">Danh mục sách</a> -->
                             </li>
                             <li>

@@ -7,8 +7,8 @@
         }
         
 
-        public function category($table){
-            $sql = "SELECT * FROM $table ORDER BY id_category_product DESC";
+        public function category($table, $cond){
+            $sql = "SELECT * FROM $table ORDER BY $cond DESC";
             return $this->db->select($sql);
 
         }

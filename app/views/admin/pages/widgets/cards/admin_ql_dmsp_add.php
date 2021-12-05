@@ -51,7 +51,7 @@
                             </h2>
                         </div>
                         <div class="body">
-                        <form action="../category/insert_category" method="POST">
+                        <form action="../category_list_product/insert_category" method="POST">
                             <div class="form-group">
                                 <label for="email">Tên danh mục</label>
                                 <input type="text" name = "title" class="form-control" >
